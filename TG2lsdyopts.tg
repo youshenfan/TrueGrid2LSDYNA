@@ -1,4 +1,5 @@
-$ 分析选项
+$ Analysis Options
+$ These commands are for TrueGrid setting the options of LS-DYNA keyword file. 
 lsdyopts  
     q1         1.5                                $ *CONTROL_BULK_VISCOSITY, Q1
     q2         0.06                               $                        , Q2
