@@ -1,0 +1,66 @@
+$ 分析选项
+lsdyopts  
+    q1         1.5                                $ *CONTROL_BULK_VISCOSITY, Q1
+    q2         0.06                               $                        , Q2
+    ibq				 1                                  $                        , TYPE
+    cputim     0.0                                $ *CONTROL_CPU, CPUTIM
+
+    endtim     300.0                              $ *CONTROL_TERMINATION, ENDTIM
+    scft       0.6                                $ *CONTROL_TIMESTEP, TSSFAC scale_factor
+    iform      0                                  $ *DATABASE_FORMAT, IFORM 0for LS-DYNA database format
+    d3plot     dtcycl         1.0;                $ *DATABASE_BINARY_D3PLOT,DT
+    d3thdt     dtcycl         1.0;                $ *DATABASE_BINARY_D3THDT,DT
+
+    elout      0.1                                $ (P114) *DATABASE_ELOUT      Element data file creation timestep   
+    glstat     0.01                               $ (P114) *DATABASE_GLSTAT     Global data file creation timestep
+    matsum     0.01                               $ (P115) *DATABASE_MATSUM     Material energies file creation timestep
+    ncforc     0.01                               $ (P115) *DATABASE_NCFORC     Nodal interface forces file creation timestep
+    rcforc     0.01                               $ (P116) *DATABASE_RCFORC     Resultant interface forces file creation timestep
+    swforc     0.01                               $ (P117) *DATABASE_SWFORC     Nodal constraint reaction forces file creation timestep
+    ;
+Not the full of this card：
+    slsfac     0.1                                $ (P105) *CONTROL_CONTACT
+    rwpnal     0                                  $ (P105) *CONTROL_CONTACT
+    islchk     1                                  $ (P105) *CONTROL_CONTACT
+    shlthk     0                                  $ (P105) *CONTROL_CONTACT
+    penopt     0                                  $ (P105) *CONTROL_CONTACT
+    thkchg     0                                  $ (P105) *CONTROL_CONTACT
+    orien      1                                  $ (P105) *CONTROL_CONTACT
+    usrstr     0                                  $ (P105) *CONTROL_CONTACT 第2行
+    usrfrc     0                                  $ (P105) *CONTROL_CONTACT 第2行
+    nsbcs      5                                  $ (P105) *CONTROL_CONTACT 第2行
+    interm     0                                  $ (P105) *CONTROL_CONTACT 第2行
+    xpene      0                                  $ (P105) *CONTROL_CONTACT 第2行
+
+    hgen       2                                  $ *CONTROL_ENERGY, HGEN
+    rwen       1                                  $                , RWEN
+    slnten     2                                  $                , SLNTEN
+    rylen      2                                  $                , RYLEN
+
+    neiph      0                                  $ *DATABASE_EXTENT_BINARY
+    neips      0 
+    maxint     3
+    strflg     1
+    sigflg     1
+    epsflg     1
+    rltflg     1
+    engflg     1
+    cmpflg     0
+    ieverp     0
+    beamip     4
+    dcomp      1
+    shge       1
+    stssz      1
+    n3thdt     2
+
+
+
+
+
+
+;
+
+
+
+
+
